@@ -1,0 +1,22 @@
+{
+  "name": "09-readme_generator",
+  "version": "1.0.0",
+  "description": "README Generator CLI App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "cli"
+  ],
+  "author": "W Kyle Resurreccion",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.1.0",
+    "jquery": "^3.4.1",
+    "jsdom": "^16.2.2"
+  }
+}
