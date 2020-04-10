@@ -13,8 +13,8 @@ ${answer.description}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [License](#license)
-// - [Questions](#questions)
 - [Credits](#credits)
+- [Questions](#questions)
 
 ## Installation
 ${answer.installation}
@@ -30,10 +30,6 @@ ${answer.tests}
 
 ## License
 ${answer.license}
-
-// ## Questions
-// ${api.data.avatar_url}
-// For questions, comments, or to simply get in contact with the author ${api.data.name} (${api.data.login}), check out the GitHub account [here](${api.data.html_url}).
 
 ## Credits
 ${answer.credits}

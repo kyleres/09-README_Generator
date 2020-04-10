@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generate = require("./utils/generateMarkdown");
-// const api = require("./utils/api");
+const api = require("./utils/api");
 
 const questions = [
     {
@@ -89,14 +89,11 @@ const questions = [
 
 function init() {
     inquirer.prompt(questions).then(answer => {
-        console.log(answer);
-        fs.writeFile("./markdown/README.md", generate(answer), function (err) {
-            if (err) {
-                throw err
-            } else {
-                console.log("Markdown generated successfully! Please check the markdown folder.")
-            }}
-        );
+        fs.writeFile("./markdown/README.md", generate(answer), function() {
+            api(answer.user);
+        });
+        console.log("Success!");
+        return;
     });
 };
 
